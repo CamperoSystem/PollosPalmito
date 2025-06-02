@@ -1,0 +1,79 @@
+.contenido-dashboard {
+    padding: 2rem;
+    margin-left: 50px;
+    background-color: #f4f7fe;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.btn-crear {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-crear:hover {
+    background-color: #45a049;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-usuarios th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
+
+.btn-editar,
+.btn-eliminar {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 0.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-editar {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.btn-editar:hover {
+    background-color: #1976D2;
+}
+
+.btn-eliminar {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.btn-eliminar:hover {
+    background-color: #d32f2f;
+}

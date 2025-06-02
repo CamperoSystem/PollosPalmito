@@ -1,0 +1,186 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Encabezado */
+.header {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usuario {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.acciones-superiores {
+  display: flex;
+  gap: 15px;
+}
+
+.boton-superior {
+  background-color: #ffc107;
+  color: #212529;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-superior:hover {
+  background-color: #e0a800;
+}
+
+/* Contenedor de productos */
+main.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, 1fr);    /* 2 filas */
+  gap: 20px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: auto; /* CAMBIAMOS hidden por auto para permitir scroll si es necesario */
+  height: calc(100vh - 120px); /* 120px = header + footer aproximado */
+}
+
+
+
+
+/* Producto */
+.producto {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Asegura que llene su celda */
+}
+
+.producto img {
+  max-height: 120px;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+.producto h3 {
+  font-size: 20px;
+  margin: 15px 0 8px;
+  color: #222;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+.producto h3:hover {
+  color: #007bff;
+}
+
+/* Mejora del precio */
+.precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f3a109;
+  
+  margin-bottom: 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.precio:hover {
+  transform: scale(1.1);
+  color: #28a745;
+}
+
+/* Cantidad */
+/* Mejora de los botones de cantidad */
+.cantidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  gap: 15px;
+}
+
+.cantidad button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+}
+
+.cantidad button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Contador de cantidad */
+.contador {
+  font-size: 20px;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 0;
+  background-color: #f1f1f1;
+}
+/* Footer */
+footer {
+  background-color: #343a40;
+  padding: 15px;
+  text-align: center;
+}
+
+.cerrar-caja {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar-caja:hover {
+  background-color: #bd2130;
+}
+
+
+
+
+
+/* Mejora del título del producto */
+
+
+
+
+
+
+

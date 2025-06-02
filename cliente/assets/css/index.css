@@ -1,0 +1,161 @@
+/* Fondo y tipografía general */
+body {
+  background-color: #000;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar personalizado */
+.navbar {
+  border-bottom: 4px solid #ff4500;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #f0f0f0;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff4500;
+}
+
+/* Carrusel */
+.carousel img {
+  height: 400px;
+  object-fit: cover;
+  border-bottom: 2px solid #ff4500;
+}
+
+/* Secciones */
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  color: #ff4500;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #111;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #ff4500;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Sección imagen */
+.section-image {
+  position: relative;
+  margin: 30px 0;
+}
+
+.section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: brightness(80%);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: rgba(255, 69, 0, 0.8);
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+/* Botón flotante */
+.fixed-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fixed-button:hover {
+  background-color: #fff;
+  color: #ff4500;
+}
+
+/* Opciones de pedido */
+.opciones-pedido {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  background-color: #1a1a1a;
+  border: 1px solid #ff4500;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.opciones-pedido p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.opcion-btn {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.opcion-btn:hover {
+  background-color: #ff4500;
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #aaa;
+  padding: 40px 0;
+  border-top: 2px solid #ff4500;
+}
+
+.footer a {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff4500;
+}

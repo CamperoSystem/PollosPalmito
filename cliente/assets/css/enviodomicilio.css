@@ -1,0 +1,96 @@
+body {
+    background-color: #121212;
+    color: #f0f8ff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h2, h4, h5 {
+    color: #ff4500;
+}
+.titulo-naranja {
+    color: #ff4500;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #ff4500;
+    border-radius: 10px;
+}
+
+input.form-control,
+input.form-control:focus {
+    background-color: #2a2a2a;
+    color: #f0f8ff;
+    border: 1px solid #ff4500;
+}
+
+input.form-control::placeholder {
+    color: #ccc;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-outline-light {
+    border: 1px solid #f0f8ff;
+    color: #f0f8ff;
+}
+
+.btn-outline-light:hover {
+    background-color: #f0f8ff;
+    color: #121212;
+}
+
+.btn-success {
+    background-color: #ff4500;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #e03e00;
+}
+
+.btn-outline-danger, .btn-outline-success {
+    border-color: #ff4500;
+    color: #ff4500;
+}
+
+.btn-outline-danger:hover, .btn-outline-success:hover {
+    background-color: #ff4500;
+    color: #121212;
+}
+
+.contador .cantidad {
+    min-width: 30px;
+    text-align: center;
+    color: #f0f8ff;
+    border: 1px solid #ff4500;
+}
+
+#productosContainer .card {
+    border: 1px solid #444;
+    transition: transform 0.3s ease;
+}
+
+#productosContainer .card:hover {
+    transform: scale(1.03);
+    border-color: #ff4500;
+}
+
+#codigoQR {
+    display: block;
+    margin: 0 auto;
+}
+
+#detalleCosto {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #f0f8ff;
+}
+
+#linkGPS {
+    color: #ff4500;
+    font-size: 0.9rem;
+}

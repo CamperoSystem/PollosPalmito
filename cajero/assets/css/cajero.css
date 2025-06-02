@@ -1,0 +1,187 @@
+/* Colores base */
+:root {
+    --azul-marino: #001f3f;
+    --azul-claro: #0074D9;
+    --blanco: #ffffff;
+    --gris-claro: #f2f2f2;
+    --gris-medio: #cccccc;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--gris-claro);
+    margin: 0;
+    padding: 20px;
+    color: var(--azul-marino);
+}
+
+h1, h2 {
+    color: var(--azul-marino);
+    text-align: center;
+}
+
+/* Contenedor de productos */
+.producto {
+    border: 1px solid var(--azul-marino);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--blanco);
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.producto button {
+    background-color: var(--azul-marino);
+    color: var(--blanco);
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.producto button:hover {
+    background-color: var(--azul-claro);
+}
+
+.cantidad {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--azul-marino);
+}
+
+/* Selección de pago */
+label, select {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--azul-marino);
+}
+
+/* Botones */
+#finalizar, #cancelar {
+    display: block;
+    margin: 20px auto;
+    background-color: var(--azul-marino);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#finalizar:hover, #cancelar:hover {
+    background-color: var(--azul-claro);
+}
+
+/* Carrito */
+#vista-carrito {
+    background-color: var(--blanco);
+    border: 1px solid var(--azul-marino);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#lista-carrito li {
+    border-bottom: 1px solid var(--gris-medio);
+    padding: 8px 0;
+}
+
+
+/* ENCABEZADO */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul-marino);
+    color: var(--blanco);
+    padding: 15px 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.usuario-info span {
+    margin-right: 10px;
+}
+
+.btn-salir {
+    background-color: crimson;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-salir:hover {
+    background-color: darkred;
+}
+
+/* EFECTO IMAGEN */
+.producto img {
+    transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+}
+
+/* CARRITO FLOTANTE */
+#carrito-flotante {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: var(--blanco);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#carrito-flotante h2 {
+    margin-top: 0;
+    color: var(--azul-marino);
+}
+
+#carrito-flotante select,
+#carrito-flotante button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* QR */
+#qr-container img {
+    border: 1px solid var(--azul-marino);
+    padding: 5px;
+    border-radius: 8px;
+}
