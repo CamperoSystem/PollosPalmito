@@ -21,10 +21,6 @@
 ```bash
 git clone https://github.com/CamperoSystem/PollosPalmito.git
 Copia la carpeta en:
-
-makefile
-Copiar
-Editar
 C:\xampp\htdocs\PollosPalmito
 Importa la base de datos:
 
@@ -32,25 +28,21 @@ Abre phpMyAdmin
 
 Crea una base de datos llamada pollospalmito
 
-Importa el archivo SQL: base_datos/pollospalmito.sql
+Importa el archivo SQL: basedatos
 
 Configura la conexión en tu archivo PHP:
 
 php
-Copiar
-Editar
+
 // Ejemplo de conexion.php
-$conexion = new mysqli("localhost", "root", "", "pollospalmito");
+$conexion = new mysqli("localhost", "root", "tu_contraseña", "pollospalmito");
 ▶️ Cómo ejecutar el sistema
 Inicia Apache y MySQL desde el panel de XAMPP
 
 Abre el navegador y accede a:
 
-arduino
-Copiar
-Editar
+
 http://localhost/PollosPalmito
-📊 Panel de Administración
 🔐 Login
 Acceso con usuario y contraseña
 
